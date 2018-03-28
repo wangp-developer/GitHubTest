@@ -28,7 +28,7 @@
 }
 
 - (void)clickAction{
-    NSLog(@"");
+    NSLog(@"😁😁");
 }
 
 - (void)didReceiveMemoryWarning {
