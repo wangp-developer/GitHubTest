@@ -28,6 +28,13 @@
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     btn.frame = CGRectMake((self.view.bounds.size.width - 100) / 2, (self.view.bounds.size.height - 100) / 2, 100, 100);
     [btn addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:btn1];
+    [btn1 setTitle:@"点击" forState:UIControlStateNormal];
+    [btn1 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    btn1.frame = CGRectMake((self.view.bounds.size.width - 100) / 2, (self.view.bounds.size.height - 100) / 4, 100, 100);
+    [btn1 addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (IBAction)clickAction:(id)sender {
